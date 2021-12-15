@@ -1,0 +1,5 @@
+name: Batch Upload
+description: Batch upload api with csv import
+core_version_requirement: ^8 || ^9
+package: Custom
+type: module

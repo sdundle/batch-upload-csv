@@ -1,0 +1,7 @@
+batch_upload.bulk_upload_csv:
+  path: '/admin/batch-upload'
+  defaults:
+    _title: 'Import CSV'
+    _form: '\Drupal\batch_upload\Form\BatchUpload'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the batch_upload module.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function batch_upload_schema() {
+  $schema['batch_upload_csv'] = [
+    'description' => 'Batch Upload CSV data',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'full_name' => [
+        'type' => 'varchar',
+        'length' => 60,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}
